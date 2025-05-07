@@ -1,17 +1,49 @@
-<?php include 'header.html'; ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Équipe GeTech</title>
+    <link rel="icon" href="images/logo_getech.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <img src="images/logo_getech.ico" alt="Logo GeTech" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets de GeTech</a></li>
+                <li><a href="telechargements.html">Téléchargements</a></li>
+                <li><a href="equipe.html">Équipe GeTech</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="equipe">
-    <h2>Notre Équipe</h2>
-    <div class="membre">
-        <img src="images/membre1.jpg" alt="Membre 1">
-        <h3><a href="membre1.php">Nom Membre 1</a></h3>
-        <p>Spécialiste en développement Python, interface utilisateur et base de données.</p>
-    </div>
-    <div class="membre">
-        <img src="images/membre2.jpg" alt="Membre 2">
-        <h3><a href="membre2.php">Nom Membre 2</a></h3>
-        <p>Expert en électronique embarquée et intelligence artificielle.</p>
-    </div>
-</section>
+    <!-- Contenu principal -->
+    <main>
+        <section class="equipe">
+            <h2>Notre Équipe</h2>
+            <div class="membre">
+                <img src="images/membre1.jpg" alt="Membre 1" class="membre-photo">
+                <h3><a href="membre1.html">Nom Membre 1</a></h3>
+                <p>Spécialiste en développement Python, interface utilisateur et base de données.</p>
+            </div>
+            <div class="membre">
+                <img src="images/membre2.jpg" alt="Membre 2" class="membre-photo">
+                <h3><a href="membre2.html">Nom Membre 2</a></h3>
+                <p>Expert en électronique embarquée et intelligence artificielle.</p>
+            </div>
+            <!-- Ajouter d'autres membres ici -->
+        </section>
+    </main>
 
-<?php include 'footer.html'; ?>
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 GeTech. Tous droits réservés.</p>
+        <img src="images/logo_getech.ico" alt="Logo GeTech" class="footer-logo">
+    </footer>
+</body>
+</html>
