@@ -1,33 +1,63 @@
-<?php include 'header.html'; ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - GeTech</title>
+    <link rel="icon" href="images/logo_getech.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête (header) -->
+    <header>
+        <img src="images/logo_getech.ico" alt="Logo GeTech" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets de GeTech</a></li>
+                <li><a href="telechargements.html">Téléchargements</a></li>
+                <li><a href="equipe.html">Équipe GeTech</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="intro">
-    <h2>Bienvenue sur le site officiel de GeTech</h2>
-    <p>GeTech est une association de passionnés de génie logiciel, d'électronique et d'innovation technologique.</p>
-</section>
+    <!-- Contenu principal -->
+    <main>
+        <section class="intro">
+            <h2>Bienvenue sur le site officiel de GeTech</h2>
+            <p>GeTech est une association de passionnés de génie logiciel, d'électronique et d'innovation technologique.</p>
+        </section>
 
-<section class="domaines">
-    <h3>Nos domaines d'intervention</h3>
-    <ul>
-        <li>Développement de logiciels</li>
-        <li>Automatisation</li>
-        <li>Reconnaissance faciale</li>
-        <li>Gestion d'établissements</li>
-    </ul>
-</section>
+        <section class="domaines">
+            <h3>Nos domaines d'intervention</h3>
+            <ul>
+                <li>Développement de logiciels</li>
+                <li>Automatisation</li>
+                <li>Reconnaissance faciale</li>
+                <li>Gestion d'établissements</li>
+            </ul>
+        </section>
 
-<section class="projets">
-    <h3>Nos projets</h3>
-    <div class="projet-module">
-        <img src="images/projet1.jpg" alt="Projet 1">
-        <h4><a href="projet1.php">Projet 1</a></h4>
-        <p>Brève description du projet 1...</p>
-    </div>
-    <div class="projet-module">
-        <img src="images/projet2.jpg" alt="Projet 2">
-        <h4><a href="projet2.php">Projet 2</a></h4>
-        <p>Brève description du projet 2...</p>
-    </div>
-    <!-- Ajouter plus de projets -->
-</section>
+        <section class="projets">
+            <h3>Nos projets</h3>
+            <div class="projet-module">
+                <img src="images/projet1.jpg" alt="Projet 1">
+                <h4><a href="projet1.html">Projet 1</a></h4>
+                <p>Brève description du projet 1...</p>
+            </div>
+            <div class="projet-module">
+                <img src="images/projet2.jpg" alt="Projet 2">
+                <h4><a href="projet2.html">Projet 2</a></h4>
+                <p>Brève description du projet 2...</p>
+            </div>
+        </section>
+    </main>
 
-<?php include 'footer.html'; ?>
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 GeTech. Tous droits réservés.</p>
+        <img src="images/logo_getech.ico" alt="Logo GeTech" class="footer-logo">
+    </footer>
+</body>
+</html>
