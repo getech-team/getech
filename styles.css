@@ -40,3 +40,18 @@ body {
     height: auto;
     display: block;
 }
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0078d7; /* bleu vif ou couleur principale de GeTech */
+}
