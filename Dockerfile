@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
 RUN a2enmod rewrite
 
 # Copier les fichiers de l'application dans le conteneur
-COPY ./public /var/www/html/
+COPY . /var/www/html/
 
 # Installer Composer pour gérer les dépendances PHP
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
