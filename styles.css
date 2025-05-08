@@ -29,6 +29,7 @@ nav ul {
     justify-content: center;
     padding: 0;
     margin: 10px 0;
+    flex-wrap: wrap;
 }
 
 nav li {
@@ -56,6 +57,14 @@ nav a:hover {
     max-width: 600px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* Pour l'effet d'apparition JS */
+    transform: translateY(50px);
+}
+
+.projet-module:hover, .membre:hover, .download-module:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 51, 102, 0.15);
 }
 
 .projet-module img, .membre img {
@@ -95,4 +104,42 @@ section h2, section h3 {
 /* Pied de page */
 footer p {
     margin: 5px 0;
+}
+
+/* Bouton retour en haut */
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #0055aa;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projet-module, .membre, .download-module {
+        width: 90%;
+    }
+
+    #backToTop {
+        bottom: 20px;
+        right: 20px;
+    }
 }
