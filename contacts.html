@@ -6,7 +6,7 @@
     <title>Contacts - GeTech</title>
     <link rel="icon" href="images/logo_getech.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
-    <!-- Font Awesome corrigé pour les icônes -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-pO2eC2ePAvYypv5VqSKHTkB6W8VVtv/jjFENM1MD3rG1MXtDYTz4q6/NFLkg7FK4WmN63LGU3NUE7xv3wWf1xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -20,7 +20,7 @@
                 <li><a href="projets.html">Projets de GeTech</a></li>
                 <li><a href="telechargements.html">Téléchargements</a></li>
                 <li><a href="equipe.html">Équipe GeTech</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="contacts.html" class="active">Contacts</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +32,7 @@
             <p><strong>Email :</strong> <a href="mailto:orggetech@gmail.com">orggetech@gmail.com</a></p>
             <p><strong>Téléphone :</strong> <a href="tel:+22897105992">+228 97 10 59 92</a></p>
 
-            <div class="social-icons">
+            <div class="social-icons" aria-label="Réseaux sociaux">
                 <a href="https://www.facebook.com/profile.php?id=100076249891369" target="_blank" title="Facebook">
                     <i class="fab fa-facebook fa-2x"></i>
                 </a>
@@ -49,6 +49,21 @@
                     <i class="fab fa-twitter fa-2x"></i>
                 </a>
             </div>
+
+            <!-- Formulaire de contact -->
+            <form action="mailto:orggetech@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <h3>Laissez-nous un message</h3>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
     </main>
 
@@ -57,6 +72,8 @@
         <p>&copy; 2025 GeTech. Tous droits réservés.</p>
         <img src="images/logo_getech.ico" alt="Logo GeTech" class="footer-logo" />
     </footer>
+
+    <!-- Bouton retour en haut -->
     <button id="backToTop" title="Retour en haut">↑</button>
     <script src="script.js"></script>
 </body>
