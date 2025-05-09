@@ -223,20 +223,24 @@ footer p {
 }
 
 .carousel-item {
-    min-width: 200px;
-    flex: 0 0 auto;
+    flex: 0 0 250px; /* largeur de base */
+    max-width: 90vw; /* limite pour petits écrans */
     text-align: center;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .carousel-item img {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    object-fit: cover; /* facultatif mais utile */
+    max-height: 200px;  /* ajustable selon la hauteur voulue */
 }
+
 
 .carousel-btn {
     position: absolute;
