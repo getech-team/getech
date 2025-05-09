@@ -84,23 +84,6 @@ section h2, section h3 {
     text-align: center;
 }
 
-/* Réseaux sociaux */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.social-icons a {
-    color: #333;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #0078d7;
-}
-
 /* Pied de page */
 footer p {
     margin: 5px 0;
