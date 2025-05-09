@@ -199,3 +199,23 @@ footer p {
 .contact-form button:hover {
     background-color: #0055aa;
 }
+
+/* Réseaux sociaux dans le pied de page */
+.social-icons-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons-footer a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons-footer a:hover {
+    color: #00ccff;
+    transform: scale(1.2);
+}
+
