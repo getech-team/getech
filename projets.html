@@ -42,11 +42,16 @@
         </div>
     </section>
 
-    <!-- Pied de page -->
-    <footer>
-        <p>&copy; 2025 GeTech. Tous droits réservés.</p>
-        <img src="images/logo_getech.ico" alt="Logo GeTech" class="footer-logo">
-    </footer>
+    <!-- À placer avant </body> -->
+    <div id="footer-container"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-container").innerHTML = data;
+            });
+    </script>
+
     <button id="backToTop" title="Retour en haut">↑</button>
     <script src="script.js"></script>
 </body>
