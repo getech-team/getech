@@ -202,3 +202,8 @@ footer p {
     transform: scale(1.2);
 }
 
+.logo-footer {
+    width: 60px;  /* ou une autre valeur selon ton besoin */
+    height: auto;
+    margin-bottom: 10px;
+}
