@@ -39,3 +39,48 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Défilement automatique du carrousel toutes les 10 secondes avec interaction utilisateur
+document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.carousel-track');
+    const items = document.querySelectorAll('.carousel-item');
+    let index = 0;
+    let interval;
+
+    function scrollCarousel() {
+        index = (index + 1) % items.length;
+        const itemWidth = items[0].offsetWidth;
+        track.scrollTo({
+            left: itemWidth * index,
+            behavior: 'smooth'
+        });
+    }
+
+    function startAutoScroll() {
+        interval = setInterval(scrollCarousel, 10000); // toutes les 10 secondes
+    }
+
+    function stopAutoScroll() {
+        clearInterval(interval);
+    }
+
+    // Redémarrer après une interaction utilisateur
+    function resetAutoScroll() {
+        stopAutoScroll();
+        startAutoScroll();
+    }
+
+    // Pause lors du survol
+    track.addEventListener('mouseenter', stopAutoScroll);
+    track.addEventListener('mouseleave', startAutoScroll);
+
+    // Navigation manuelle (si on ajoute des flèches plus tard)
+    track.addEventListener('wheel', () => {
+        resetAutoScroll();
+    });
+
+    // Lancer le défilement au chargement
+    if (track && items.length > 0) {
+        startAutoScroll();
+    }
+});
