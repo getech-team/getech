@@ -22,214 +22,10 @@ header, footer {
     margin: 0 10px;
 }
 
-/* Navigation */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 10px 0;
-    flex-wrap: wrap;
-}
-
-nav li {
-    margin: 0 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #00ccff;
-}
-
-/* Modules projets, membres, téléchargements */
-.projet-module, .membre, .download-module {
-    border: 1px solid #ccc;
-    background-color: white;
-    padding: 15px;
-    margin: 20px auto;
-    border-radius: 8px;
-    max-width: 600px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0; /* Pour l'effet d'apparition JS */
-    transform: translateY(50px);
-}
-
-.projet-module:hover, .membre:hover, .download-module:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 15px rgba(0, 51, 102, 0.15);
-}
-
-.projet-module img, .membre img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* Sections */
-section {
-    padding: 30px 20px;
-}
-
-section h2, section h3 {
-    color: #003366;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-/* Pied de page */
-footer p {
-    margin: 5px 0;
-}
-
-/* Bouton retour en haut */
-#backToTop {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #003366;
-    color: white;
-    border: none;
-    padding: 12px 16px;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-}
-
-#backToTop:hover {
-    background-color: #0055aa;
-}
-
-/* Responsive */
-@media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .projet-module, .membre, .download-module {
-        width: 90%;
-    }
-
-    #backToTop {
-        bottom: 20px;
-        right: 20px;
-    }
-}
-
-/* Formulaire de contact */
-.contact-form {
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-}
-
-.contact-form h3 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #003366;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: inherit;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-
-.contact-form textarea {
-    resize: vertical;
-}
-
-.contact-form button {
-    display: block;
-    width: 100%;
-    background-color: #003366;
-    color: white;
-    border: none;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #0055aa;
-}
-
-/* Réseaux sociaux dans le pied de page */
-.social-icons-footer {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.social-icons-footer a {
-    color: white;
-    font-size: 20px;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.social-icons-footer a:hover {
-    color: #00ccff;
-    transform: scale(1.2);
-}
-
 .logo-footer {
-    width: 60px;  /* ou une autre valeur selon ton besoin */
+    width: 60px;
     height: auto;
     margin-bottom: 10px;
-}
-
-/* Structure générale */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-/* En-tête et pied de page */
-header, footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-}
-
-.logo, .footer-logo {
-    width: 40px;
-    height: auto;
-    vertical-align: middle;
-    margin: 0 10px;
 }
 
 /* Navigation */
@@ -299,6 +95,25 @@ footer p {
     margin: 5px 0;
 }
 
+/* Réseaux sociaux dans le pied de page */
+.social-icons-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons-footer a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons-footer a:hover {
+    color: #00ccff;
+    transform: scale(1.2);
+}
+
 /* Bouton retour en haut */
 #backToTop {
     display: none;
@@ -318,23 +133,6 @@ footer p {
 
 #backToTop:hover {
     background-color: #0055aa;
-}
-
-/* Responsive */
-@media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .projet-module, .membre, .download-module {
-        width: 90%;
-    }
-
-    #backToTop {
-        bottom: 20px;
-        right: 20px;
-    }
 }
 
 /* Formulaire de contact */
@@ -393,72 +191,19 @@ footer p {
     background-color: #0055aa;
 }
 
-/* Réseaux sociaux dans le pied de page */
-.social-icons-footer {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.social-icons-footer a {
-    color: white;
-    font-size: 20px;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.social-icons-footer a:hover {
-    color: #00ccff;
-    transform: scale(1.2);
-}
-
-.logo-footer {
-    width: 60px;  /* ou une autre valeur selon ton besoin */
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.domaines-carousel {
-    padding: 30px;
-    background-color: #f9f9f9;
-    overflow: hidden;
-}
-
-.domaines-carousel h3 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.carousel-track {
-    display: flex;
-    gap: 20px;
-    animation: scroll-horizontal 20s linear infinite;
-    width: max-content;
-}
-
-.carousel-item {
-    flex: 0 0 auto;
-    text-align: center;
-    width: 200px;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.carousel-item p {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-@keyframes scroll-horizontal {
-    0% {
-        transform: translateX(0);
+/* Responsive */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
-    100% {
-        transform: translateX(-100%);
+
+    .projet-module, .membre, .download-module {
+        width: 90%;
+    }
+
+    #backToTop {
+        bottom: 20px;
+        right: 20px;
     }
 }
