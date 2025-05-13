@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://getech-team.github.io/getech/sitemap.xml
