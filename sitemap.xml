@@ -5,4 +5,11 @@
     <lastmod>2025-05-13</lastmod>
     <priority>1.00</priority>
   </url>
+
+  <url>
+    <loc>https://getech-team.github.io/getech/index.html</loc>
+    <lastmod>2025-05-13</lastmod>
+    <priority>0.80</priority>
+  </url>
+  
 </urlset>
