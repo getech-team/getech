@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet GeTech-SMS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo_getech.ico" type="image/x-icon">
+    <style>
+        .telechargement-btn {
+            display: inline-block;
+            background-color: #003366;
+            color: white;
+            padding: 12px 20px;
+            margin: 10px 10px 20px 0;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .telechargement-btn:hover {
+            background-color: #0055aa;
+        }
+
+        .video-guide {
+            max-width: 700px;
+            margin: 30px auto;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .video-guide video {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        .video-selection {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .video-selection button {
+            padding: 8px 12px;
+            border: none;
+            background-color: #003366;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .video-selection button:hover {
+            background-color: #0055aa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo_getech.ico" alt="Logo GeTech" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets de GeTech</a></li>
+                <li><a href="telechargements.html">Téléchargements</a></li>
+                <li><a href="equipe.html">Équipe GeTech</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="projet-detail">
+        <h1>GeTech-SMS – Gérez votre établissement en toute simplicité</h1>
+        <p><strong>Un logiciel moderne de gestion scolaire conçu pour les établissements éducatifs d’Afrique de l’Ouest.</strong></p>
+        
+        <div class="image-principale">
+            <img src="images/getech-sms_project.jpg" alt="GeTech-SMS" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 20px;">
+        </div>
+
+        <h2>Description</h2>
+        <p>
+            GeTech-SMS est une solution logicielle conçue par l’association GeTech pour permettre une gestion complète, centralisée et intuitive des établissements scolaires.
+            Le logiciel couvre la gestion des élèves, du personnel, des notes, bulletins, finances, et communications avec les parents.
+            Il est évolutif, sécurisé et adapté aux réalités des établissements africains.
+        </p>
+
+        <h2>Étapes du projet</h2>
+        <ol>
+            <li>Analyse des besoins des établissements scolaires</li>
+            <li>Développement et tests du logiciel desktop</li>
+            <li>Ajout de fonctionnalités : caisse, messagerie interne, relevés de notes</li>
+            <li>Création d'une documentation complète (PDF + vidéo)</li>
+            <li>Déploiement pilote dans des établissements partenaires</li>
+            <li>Préparation de la version mobile et web</li>
+        </ol>
+
+        <h2>Nous soutenir</h2>
+        <p>Votre soutien peut accélérer le développement de nouvelles fonctionnalités, l’hébergement des versions cloud, et l’accès gratuit pour les établissements en zone défavorisée.</p>
+        <p>Vous pouvez nous soutenir en :</p>
+        <ul>
+            <li>Finançant le développement des versions mobile et web</li>
+            <li>Offrant des ressources matérielles ou serveurs</li>
+            <li>Partageant le projet autour de vous</li>
+        </ul>
+        <a href="contacts.html" class="telechargement-btn">Nous contacter pour un partenariat</a>
+
+        <h2>Téléchargements</h2>
+        <a href="telechargements/getech_sms_installer.exe" class="telechargement-btn">Télécharger le logiciel</a>
+        <a href="telechargements/guide_getech_sms.pdf" class="telechargement-btn">Télécharger le guide PDF</a>
+
+        <h2>Guides vidéo</h2>
+        <div class="video-guide">
+            <video id="videoLecture" controls>
+                <source src="videos/introduction.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+            </video>
+            <div class="video-selection">
+                <button onclick="changerVideo('videos/introduction.mp4')">Introduction</button>
+                <button onclick="changerVideo('videos/installation.mp4')">Installation</button>
+                <button onclick="changerVideo('videos/utilisation_base.mp4')">Utilisation</button>
+                <button onclick="changerVideo('videos/gestion_notes.mp4')">Gestion des notes</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <div id="footer-container"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-container").innerHTML = data;
+            });
+
+        function changerVideo(src) {
+            const video = document.getElementById("videoLecture");
+            video.src = src;
+            video.load();
+            video.play();
+        }
+    </script>
+
+    <button id="backToTop" title="Retour en haut">↑</button>
+    <script src="script.js"></script>
+</body>
+  </html>
+              
